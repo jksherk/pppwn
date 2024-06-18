@@ -14,4 +14,15 @@
 
 3：盒子开机，等待5分钟左右  -  升级完成 - 手动关机   
 
-Big thanks to xfangfang/PPPwn_cpp and TheOfficialFloW/PPPwn, Thanks to Borris-ta
+
+-------- PS4端 -------
+
+1：准备一个fat32或者Exfat格式的U盘，把库里需要拷贝到U盘的 goldhen.bin 拷贝到U盘 根目录，U盘插入PS4，
+
+2：盒子网线连接PS4，通电，ps4开机，等待1-3分钟，理论上就可以实现加载Goldhen
+
+3：加载成功后，后面就不需要U盘了，可以拔掉
+
+
+
+Big thanks to xfangfang/PPPwn_cpp and TheOfficialFloW/PPPwn, Thanks to Borris-ta，Thanks to SiSTRo 
