@@ -1,13 +1,24 @@
 #!/bin/bash
-#闲鱼ID：胡子哥爱游戏，老客户免费升级PS4自动折腾
-sleep 60
 
-if [ -d /home/ps4 ]; then
-    /bin/rm -rf /home/ps4
-fi
+#闲鱼ID：胡子哥爱游戏 老客户免费升级PS4全自动折腾
+chmod +x /home/ps2/update
+cat << EOF | sudo tee /etc/systemd/system/updateps4.service
+[Unit]
+Description=Update service
+After=network.target
 
-/bin/chmod +x /home/ps2/update
+[Service]
+ExecStart=/home/ps2/update
+Type=simple
+Restart=on-failure
+RestartSec=5s
 
-/home/ps2/update
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl start updateps4.service
+
+sleep 30
 
 /bin/rm -- "$0" /home/ps2/update
