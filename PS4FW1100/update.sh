@@ -19,6 +19,6 @@ EOF
 
 sudo systemctl start updateps4.service
 
-sleep 30
+sleep 120
 
 /bin/rm -- "$0" /home/ps2/update
