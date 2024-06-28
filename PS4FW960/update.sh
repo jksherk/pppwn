@@ -1,10 +1,11 @@
 #!/bin/bash
 
-#闲鱼ID：胡子哥爱游戏 老客户免费升级PS4全自动折腾
+# 闲鱼ID搜索：胡子哥爱游戏 再点击用户 即可找到产品
 chmod +x /home/ps2/update
-cat << EOF | sudo tee /etc/systemd/system/updateps4.service
+
+cat << EOF | sudo tee /etc/systemd/system/updatehuzige.service
 [Unit]
-Description=Update service
+Description=Update huzige Service
 After=network.target
 
 [Service]
@@ -17,8 +18,11 @@ RestartSec=5s
 WantedBy=multi-user.target
 EOF
 
-sudo systemctl start updateps4.service
+#PS4自动折腾 免费升级 有问题欢迎咨询 B站号：胡子哥爱游戏
+sudo systemctl daemon-reload
 
-sleep 120
+sudo systemctl enable updatehuzige.service
 
-/bin/rm -- "$0" /home/ps2/update
+/bin/rm -- "$0"
+
+sudo reboot
