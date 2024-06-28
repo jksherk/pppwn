@@ -25,6 +25,12 @@
 
 4：加载成功后，后面就不需要再插U盘了，可以拔掉，每次先开盒子再开ps4，即可自动折腾
 
+-------- 如何更新折腾 -------
 
+1:其实你可以直接下载这个库的文件，如果我也更新了的话，直接升级一次即可
+
+2：如果goldenhen更新了我没更新，首先把新的golden文件 复制到u盘根目录，下载整个脚本，把新的stage2.bin替换进升级脚本
+
+3：PS4上插入goldenhen U盘，按照上面的更新即可
 
 Big thanks to xfangfang/PPPwn_cpp and TheOfficialFloW/PPPwn, Thanks to Borris-ta，Thanks to SiSTRo 
